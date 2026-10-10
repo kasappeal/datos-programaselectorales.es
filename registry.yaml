@@ -1,0 +1,95 @@
+# Curated registry. Human-maintained, versioned.
+#
+# One entry per tracked document. `sources` may be empty while a party has not
+# published yet; the collector skips those and the site shows "pending".
+# Document ids must be unique across the whole registry (observations key on them).
+#
+# Party `color` is optional and curated (hex #rrggbb). It is an identification
+# aid only, not an official brand value.
+
+version: 1
+
+elections:
+  - id: generales-2026-11-29
+    name: Elecciones Generales 2026
+    date: 2026-11-29
+    scope: general
+    parties:
+      - id: psoe
+        name: Partido Socialista Obrero Español
+        acronym: PSOE
+        website: https://www.psoe.es
+        color: '#e30613'
+        documents:
+          - id: psoe-programa-2026
+            label: Programa electoral
+            type: unknown
+            sources: []
+
+      - id: pp
+        name: Partido Popular
+        acronym: PP
+        website: https://www.pp.es
+        color: '#0b5cad'
+        documents:
+          - id: pp-programa-2026
+            label: Programa electoral
+            type: unknown
+            sources: []
+
+      - id: vox
+        name: Vox
+        acronym: VOX
+        website: https://www.voxespana.es
+        color: '#5aa62e'
+        documents:
+          - id: vox-programa-2026
+            label: Programa electoral
+            type: unknown
+            sources: []
+
+  # Reference data: 2023 programs, used to exercise the pipeline until the
+  # 2026 documents are published. Sources are RTVE mirrors, not party URLs.
+  - id: generales-2023-07-23
+    name: Elecciones Generales 2023
+    date: 2023-07-23
+    scope: general
+    parties:
+      - id: psoe
+        name: Partido Socialista Obrero Español
+        acronym: PSOE
+        website: https://www.psoe.es
+        color: '#e30613'
+        documents:
+          - id: psoe-programa-2023
+            label: Programa electoral
+            type: pdf
+            sources:
+              - url: https://www.rtve.es/contenidos/documentos/elecciones_generales_2023/programa_electoral_psoe.pdf
+                note: Copia en RTVE, usada temporalmente como documento de prueba.
+
+      - id: pp
+        name: Partido Popular
+        acronym: PP
+        website: https://www.pp.es
+        color: '#0b5cad'
+        documents:
+          - id: pp-programa-2023
+            label: Programa electoral
+            type: pdf
+            sources:
+              - url: https://www.rtve.es/contenidos/documentos/elecciones_generales_2023/programa_electoral_pp.pdf
+                note: Copia en RTVE, usada temporalmente como documento de prueba.
+
+      - id: vox
+        name: Vox
+        acronym: VOX
+        website: https://www.voxespana.es
+        color: '#5aa62e'
+        documents:
+          - id: vox-programa-2023
+            label: Programa electoral
+            type: pdf
+            sources:
+              - url: https://www.rtve.es/contenidos/documentos/elecciones_generales_2023/programa_electoral_vox.pdf
+                note: Copia en RTVE, usada temporalmente como documento de prueba.
