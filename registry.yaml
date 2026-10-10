@@ -48,6 +48,39 @@ elections:
             type: unknown
             sources: []
 
+      - id: sumar
+        name: Sumar
+        acronym: Sumar
+        website: https://sumar.es
+        color: '#e5007d'
+        documents:
+          - id: sumar-programa-2026
+            label: Programa electoral
+            type: unknown
+            sources: []
+
+      - id: podemos
+        name: Podemos
+        acronym: Podemos
+        website: https://podemos.info
+        color: '#7b2d8b'
+        documents:
+          - id: podemos-programa-2026
+            label: Programa electoral
+            type: unknown
+            sources: []
+
+      - id: erc
+        name: Esquerra Republicana de Catalunya
+        acronym: ERC
+        website: https://www.esquerra.cat
+        color: '#f0a500'
+        documents:
+          - id: erc-programa-2026
+            label: Programa electoral
+            type: unknown
+            sources: []
+
   # Reference data: 2023 programs, used to exercise the pipeline until the
   # 2026 documents are published. Sources are RTVE mirrors, not party URLs.
   - id: generales-2023-07-23
