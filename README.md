@@ -1,18 +1,12 @@
-# datos — programas electorales
+# Datos — programaselectorales.es
 
-Public dataset for [programaselectorales.es](https://programaselectorales.es).
-This repo is data, not code. Point the site/collector at a checkout of it with
-`PROGRAMAS_DATA_DIR=/path/to/this/repo`.
+Conjunto de datos públicos de [programaselectorales.es](https://programaselectorales.es).
 
-- **`registry.yaml`** — curated: elections → parties → documents → sources.
-  Human-maintained; `document.id` is the join key and must be unique.
-- **`observations/*.jsonl`** — append-only. One JSON object per check we run
-  (timestamp, HTTP status, content type, size, `sha256_bytes`, `sha256_text`).
-  **Never rewrite or reorder these files.** The history is the audit trail.
+Publicamos hechos *sobre* los documentos. Los contenidos
+originales y el texto extraído página a página viven en un archivo privado
+(Cloudflare R2), no aquí.
 
-We publish facts *about* documents, never the documents. Original payloads and
-extracted per-page text live in a private archive (Cloudflare R2), not here.
-The site always links to the party's own URL.
+El sitio enlaza siempre a las URLs de los documents en las páginas oficiales de cada partido.
 
-Schema and validation live in the code repo (`@programas/core`). Timestamps are
-platform detection times, not party publication dates — see the methodology page.
+Las marcas de tiempo son las de detección de la plataforma, no las fechas de
+publicación de los partidos — consulta la página de metodología.

@@ -6,6 +6,10 @@
 #
 # Party `color` is optional and curated (hex #rrggbb). It is an identification
 # aid only, not an official brand value.
+#
+# Party `seats` is optional and curated: current members of the Congress of
+# Deputies, used only to order parties on the site. Review it periodically.
+# Seeded below with the 2023 general election result (XV legislature).
 
 version: 1
 
@@ -20,6 +24,7 @@ elections:
         acronym: PSOE
         website: https://www.psoe.es
         color: '#e30613'
+        seats: 121
         documents:
           - id: psoe-programa-2026
             label: Programa electoral
@@ -31,6 +36,7 @@ elections:
         acronym: PP
         website: https://www.pp.es
         color: '#0b5cad'
+        seats: 137
         documents:
           - id: pp-programa-2026
             label: Programa electoral
@@ -42,6 +48,7 @@ elections:
         acronym: VOX
         website: https://www.voxespana.es
         color: '#5aa62e'
+        seats: 33
         documents:
           - id: vox-programa-2026
             label: Programa electoral
@@ -51,21 +58,11 @@ elections:
       - id: sumar
         name: Sumar
         acronym: Sumar
-        website: https://sumar.es
+        website: https://movimientosumar.es
         color: '#e5007d'
+        seats: 31
         documents:
           - id: sumar-programa-2026
-            label: Programa electoral
-            type: unknown
-            sources: []
-
-      - id: podemos
-        name: Podemos
-        acronym: Podemos
-        website: https://podemos.info
-        color: '#7b2d8b'
-        documents:
-          - id: podemos-programa-2026
             label: Programa electoral
             type: unknown
             sources: []
@@ -75,8 +72,81 @@ elections:
         acronym: ERC
         website: https://www.esquerra.cat
         color: '#f0a500'
+        seats: 7
         documents:
           - id: erc-programa-2026
+            label: Programa electoral
+            type: unknown
+            sources: []
+
+      - id: junts
+        name: Junts per Catalunya
+        acronym: Junts
+        website: https://junts.cat
+        color: '#0f9d8f'
+        seats: 7
+        documents:
+          - id: junts-programa-2026
+            label: Programa electoral
+            type: unknown
+            sources: []
+
+      - id: eh-bildu
+        name: Euskal Herria Bildu
+        acronym: EH Bildu
+        website: https://ehbildu.eus
+        color: '#00c19f'
+        seats: 6
+        documents:
+          - id: eh-bildu-programa-2026
+            label: Programa electoral
+            type: unknown
+            sources: []
+
+      - id: pnv
+        name: Partido Nacionalista Vasco
+        acronym: PNV
+        website: https://www.eaj-pnv.eus
+        color: '#0a7b3e'
+        seats: 5
+        documents:
+          - id: pnv-programa-2026
+            label: Programa electoral
+            type: unknown
+            sources: []
+
+      - id: bng
+        name: Bloque Nacionalista Galego
+        acronym: BNG
+        website: https://www.bng.gal
+        color: '#2a9fd6'
+        seats: 1
+        documents:
+          - id: bng-programa-2026
+            label: Programa electoral
+            type: unknown
+            sources: []
+
+      - id: cca
+        name: Coalición Canaria
+        acronym: CCa
+        website: https://www.coalicioncanaria.org
+        color: '#f2c200'
+        seats: 1
+        documents:
+          - id: cca-programa-2026
+            label: Programa electoral
+            type: unknown
+            sources: []
+
+      - id: upn
+        name: Unión del Pueblo Navarro
+        acronym: UPN
+        website: https://www.upn.es
+        color: '#8c1c2b'
+        seats: 1
+        documents:
+          - id: upn-programa-2026
             label: Programa electoral
             type: unknown
             sources: []
